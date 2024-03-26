@@ -135,10 +135,16 @@ body {
   display: flex;
 }
 .content .active-span {
-  color: #fc554e;
+  color: #cf2a27;
 }
 .content .gray-span {
   color: #7b7a83;
+}
+.content .green-span {
+  color: #62914e;
+}
+.content .yellow-span {
+  color: #e99238;
 }
 .content .lower-equ {
   margin-top: 75px;
@@ -185,7 +191,7 @@ body {
 .content .lower-equ-line .info-icon svg {
   height: 40px;
   width: 40px;
-  fill: #fc554e;
+  fill: #cf2a27;
 }
 .content .pagnition {
   position: absolute;
@@ -353,10 +359,19 @@ input[type=radio]:checked + label {
   visibility: visible;
 }
 
+.upper-page-header {
+  font-size: 1.5rem;
+  color: #575757;
+  font-weight: 700 !important;
+  text-align: left !important;
+  margin: 0 20px 15px 20px;
+}
+
 .summary-part {
   padding: 25px;
   border: 2px solid #575757;
   margin: 0 25px;
+  min-height: 1000px;
 }
 
 .summary-header h3 {
@@ -408,16 +423,22 @@ input[type=radio]:checked + label {
   background-color: #d7d7d7;
   padding: 25px;
 }
+.summary-text-content p {
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
 .summary-text-content ul {
   padding-left: 20px;
 }
 .summary-text-content ul li {
   font-weight: 600;
   margin: 10px 0;
+  font-size: 0.9rem;
 }
 
 .content-summary {
   display: block !important;
-  padding: 50px 0 !important;
+  padding: 20px 0 !important;
   height: auto !important;
 }/*# sourceMappingURL=main.css.map */
