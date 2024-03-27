@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+  // PopUp For Image
   $(".info-icon").on("click", function () {
     $(".popup").addClass("open-popup");
     $(".close-overlay").addClass("open-popup");
@@ -7,6 +9,17 @@ $(document).ready(function () {
   $(".close-overlay").on("click", function () {
     $(".popup").removeClass("open-popup");
     $(this).removeClass("open-popup");
+  });
+
+  // PopUp For Pagination
+  $(".open-popup-pagination").on("click", function () {
+    $(".popup-pagination").addClass("open-popup");
+    $(".close-overlay").addClass("open-popup");
+  });
+
+  $(".close-overlay, .close-popup-pagination").on("click", function () {
+    $(".popup-pagination").removeClass("open-popup");
+    $(".close-overlay").removeClass("open-popup");
   });
 
   // Get Date Of Now And Print It In Html

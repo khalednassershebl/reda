@@ -254,12 +254,14 @@ body {
             }
             .next-btn {
                 padding-right: 10px;
+                cursor: pointer;
                 svg {
                     margin-right: 10px;
                 }
             }
             .back-btn {
                 padding-left: 10px;
+                cursor: pointer;
                 svg {
                     margin-left: 10px;
                 }
@@ -373,6 +375,49 @@ input[type="radio"]:checked + label {
         display: block;
     }
 }
+.popup-pagination {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    padding: 25px;
+    border: 2px solid #000;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #FFF;
+    transition: all 0.4s ease-in-out;
+    font-size: 1.3rem;
+    font-weight: 600;
+    direction: ltr;
+    span {
+        margin-bottom: 15px;
+        display: block;
+    }
+    .input-line {
+        text-align: center;
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin: 0 5px;
+        }
+        label {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background: #b5d6a7;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
 
 .close-overlay {
     position: fixed;

@@ -224,12 +224,14 @@ body {
 }
 .content .pagnition .pagnition-btns .next-btn {
   padding-right: 10px;
+  cursor: pointer;
 }
 .content .pagnition .pagnition-btns .next-btn svg {
   margin-right: 10px;
 }
 .content .pagnition .pagnition-btns .back-btn {
   padding-left: 10px;
+  cursor: pointer;
 }
 .content .pagnition .pagnition-btns .back-btn svg {
   margin-left: 10px;
@@ -339,6 +341,49 @@ input[type=radio]:checked + label {
 .popup span {
   margin-bottom: 15px;
   display: block;
+}
+
+.popup-pagination {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+  padding: 25px;
+  border: 2px solid #000;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #FFF;
+  transition: all 0.4s ease-in-out;
+  font-size: 1.3rem;
+  font-weight: 600;
+  direction: ltr;
+}
+.popup-pagination span {
+  margin-bottom: 15px;
+  display: block;
+}
+.popup-pagination .input-line {
+  text-align: center;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-pagination .input-line span {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin: 0 5px;
+}
+.popup-pagination .input-line label {
+  transition: all 0.3s ease-in-out;
+}
+.popup-pagination .input-line label:hover {
+  background: #b5d6a7;
+}
+.popup-pagination .input-line a {
+  text-decoration: none;
+  color: #000;
 }
 
 .close-overlay {
